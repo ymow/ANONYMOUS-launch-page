@@ -1,0 +1,49 @@
+
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="navbar-header">
+                   <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+             
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+                   </button>
+                      
+                         <a>
+          <%= link_to   image_tag("logo.png",:class=> "logo"), '/'%><p></p>
+                         </a>
+                         <a href="Galaxies"></a>
+           </div>          
+
+    <nav class="collapse navbar-collapse bs-navbar-collapse " role="navigation">
+            <ul class="nav nav-pills pull-right ">
+              <li><%= link_to t("menu.navbar.Home"),    '/' %></li>
+              <li><%= link_to t("menu.navbar.About"),    '/pages/about' %></li>
+              <li><a href='/pages/product'><%=t("menu.navbar.Product")%></a>
+<!--                <ul class="dropdown-menu">
+                        <li><a href="/pages/product">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+               </ul> -->
+    
+              </li>
+<!--               <li><%= link_to t("menu.navbar.Quality"), '/pages/quality' %></li> -->
+<!--               <li><%= link_to t("menu.navbar.Recruitment"), '/pages/recruitment' %></li>              
+              <li><%= link_to t("menu.navbar.Contact"), '/pages/contact' %></li> -->
+              <li class="dropdown"><a href='/#' class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="50" ><%= t("menu.navbar.language") %><b class="caret"></b></a>
+               <ul class="dropdown-menu">
+                        <li><a href="/?locale=en" >English</a></li>
+                        <li><a href="/?locale=zh-TW">Chinese</a></li>
+                        <li><a href="#">China</a></li>
+               </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
