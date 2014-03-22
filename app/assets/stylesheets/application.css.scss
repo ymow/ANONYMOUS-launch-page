@@ -1,0 +1,12 @@
+@import "bourbon";
+body{
+padding: 0;
+background: #000 url(/assets/home_bg0.jpg) center center fixed no-repeat; 
+-moz-background-size: cover; 
+background-size: cover;
+}
+img.badges {
+position:relative; 
+margin: 50% 50%; 
+width:840px;
+}
